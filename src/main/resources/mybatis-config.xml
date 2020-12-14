@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd" >
+<configuration>
+	<settings>
+		<setting name="jdbcTypeForNull" value="NULL"/>
+	</settings>
+	<typeAliases>
+		<typeAlias type="com.kh.eunsilc.board.model.domain.Board" alias="Board"/>
+		<typeAlias type="com.kh.eunsilc.board.model.domain.BoardReply" alias="BoardReply"/>
+	</typeAliases>
+	<mappers>
+		<mapper resource="mappers/board-mapper.xml"/>
+		<mapper resource="mappers/boardReply-mapper.xml"/>
+	</mappers>
+</configuration>
